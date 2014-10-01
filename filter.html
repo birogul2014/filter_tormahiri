@@ -1,0 +1,52 @@
+	<html>
+	<head>
+		<title>tormahri's filter turi</title>
+		<script type="text/javascript">
+// tormahiri filter ambiri 2014-10-01;
+	var obj=[
+
+	{
+	name:"uyghur",bikat:"www.ulinix",yexi:17
+
+	},{
+	name:"hanzu",bikat:"www.hao123.com",yexi:20
+	}
+	,{
+	name:"uyghur",bikat:"www.bilig.cc",yexi:17
+	
+	},{
+		name:"hanzu",bikat:"www.baidu.com",yexi:15
+	}
+	]
+
+	for(var i=0; i<obj.length;i++){
+
+		if(obj[i].name=="hanzu"){
+			
+			for(var has in obj[i]){
+				document.write(obj[i][has]);
+			
+			}
+		}
+	}
+var yegiobj = obj.filter(function (el) {
+
+
+return (el.name==="uyghur")
+ // return !(el.yexi===17); 
+}); 
+
+
+for(var i=0;i<yegiobj.length;i++){
+
+ for(var haslik in yegiobj[i]){ 
+
+ 	console.log(yegiobj[i][haslik]); 
+
+ } };
+		</script>
+	</head>
+	<body>
+
+	</body>
+	</html>
